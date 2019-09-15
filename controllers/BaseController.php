@@ -1,7 +1,7 @@
 <?php
 class BaseController
 {
-    function callView()
+    function callView($view = 'home')
     {
         require_once 'views/layout.php';
     }

@@ -13,7 +13,9 @@
         <h1>Header</h1>
     </div>
     <div>
-        content
+        <?php
+        require_once "views/$view.view.php";
+        ?>
     </div>
     <div>
         <h1>Footer</h1>

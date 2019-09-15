@@ -4,6 +4,6 @@ class IndexController extends BaseController
 {
     function getHomePage()
     {
-        return $this->callView();
+        return $this->callView('home');
     }
 }
