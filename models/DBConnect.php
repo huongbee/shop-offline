@@ -6,7 +6,8 @@ class DBConnect
     function __construct() // auto run
     {
         try {
-            $this->dbh = new PDO('mysql:dbname=php0205;host=127.0.0.1', 'root', '');
+            $this->dbh = new PDO('mysql:dbname=php0205_shopping;host=127.0.0.1', 'root', '');
+            $this->dbh->exec('SET NAMES utf8');
         } catch (PDOException $e) {
             echo $e->getMessage();
             return;
