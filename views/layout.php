@@ -9,10 +9,8 @@
   <![endif]-->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>MyStore premium HTML5 &amp; CSS3 template</title>
-  <meta name="description"
-    content="best template, template free, responsive theme, fashion store, responsive theme, responsive html theme, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template">
-  <meta name="keywords"
-    content="bootstrap, ecommerce, fashion, layout, responsive, responsive template, responsive template download, responsive theme, retail, shop, shopping, store, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template" />
+  <meta name="description" content="best template, template free, responsive theme, fashion store, responsive theme, responsive html theme, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template">
+  <meta name="keywords" content="bootstrap, ecommerce, fashion, layout, responsive, responsive template, responsive template download, responsive theme, retail, shop, shopping, store, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template" />
   <!-- Mobile specific metas  , -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,12 +18,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700italic,700,400italic' rel='stylesheet'
-    type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet'
-    type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,200,500,600,700,800' rel='stylesheet'
-    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,200,500,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- CSS Style -->
 
@@ -99,7 +94,7 @@
               <!-- Header Logo -->
               <div class="logo">
                 <a title="e-commerce" href="index.html">
-                  <img alt="responsive theme logo" src="images/logo.png">
+                  <img alt="responsive theme logo" src="public/source/images/logo.png">
                 </a>
               </div>
               <!-- End Header Logo -->
@@ -530,8 +525,8 @@
     </nav>
     <!-- end nav -->
 
-    <?php require_once "$view.view.php"?>
-    
+    <?php require_once "$view.view.php" ?>
+
     <!-- Footer -->
 
     <footer>
@@ -595,22 +590,22 @@
                 <ul>
                   <li>
                     <a href="#">
-                      <img title="Visa" alt="Visa" src="images/visa.png">
+                      <img title="Visa" alt="Visa" src="public/source/images/visa.png">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img title="Paypal" alt="Paypal" src="images/paypal.png">
+                      <img title="Paypal" alt="Paypal" src="public/source/images/paypal.png">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img title="Discover" alt="Discover" src="images/discover.png">
+                      <img title="Discover" alt="Discover" src="public/source/images/discover.png">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img title="Master Card" alt="Master Card" src="images/master-card.png">
+                      <img title="Master Card" alt="Master Card" src="public/source/images/master-card.png">
                     </a>
                   </li>
                 </ul>
@@ -629,23 +624,23 @@
   <!-- JS -->
 
   <!-- jquery js -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="public/source/js/jquery.min.js"></script>
 
   <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="public/source/js/bootstrap.min.js"></script>
 
 
   <!-- owl.carousel.min js -->
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="public/source/js/owl.carousel.min.js"></script>
 
   <!-- bxslider js -->
-  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="public/source/js/jquery.bxslider.js"></script>
 
   <!-- Slider Js -->
-  <script type="text/javascript" src="js/revolution-slider.js"></script>
+  <script type="text/javascript" src="public/source/js/revolution-slider.js"></script>
 
   <!-- megamenu js -->
-  <script type="text/javascript" src="js/megamenu.js"></script>
+  <script type="text/javascript" src="public/source/js/megamenu.js"></script>
   <script type="text/javascript">
     /* <![CDATA[ */
     var mega_menu = '0';
@@ -654,36 +649,35 @@
   </script>
 
   <!-- jquery.mobile-menu js -->
-  <script type="text/javascript" src="js/mobile-menu.js"></script>
+  <script type="text/javascript" src="public/source/js/mobile-menu.js"></script>
 
   <!--jquery-ui.min js -->
-  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="public/source/js/jquery-ui.js"></script>
 
   <!-- main js -->
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="public/source/js/main.js"></script>
 
   <!-- countdown js -->
-  <script type="text/javascript" src="js/countdown.js"></script>
+  <script type="text/javascript" src="public/source/js/countdown.js"></script>
 
   <!-- Revolution Slider -->
   <script type="text/javascript">
-    jQuery(document).ready(function () {
-      jQuery('.tp-banner').revolution(
-        {
-          delay: 9000,
-          startwidth: 1170,
-          startheight: 530,
-          hideThumbs: 10,
+    jQuery(document).ready(function() {
+      jQuery('.tp-banner').revolution({
+        delay: 9000,
+        startwidth: 1170,
+        startheight: 530,
+        hideThumbs: 10,
 
-          navigationType: "bullet",
-          navigationStyle: "preview1",
+        navigationType: "bullet",
+        navigationStyle: "preview1",
 
-          hideArrowsOnMobile: "on",
+        hideArrowsOnMobile: "on",
 
-          touchenabled: "on",
-          onHoverStop: "on",
-          spinner: "spinner4"
-        });
+        touchenabled: "on",
+        onHoverStop: "on",
+        spinner: "spinner4"
+      });
     });
   </script>
 
