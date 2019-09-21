@@ -8,7 +8,9 @@ class IndexController extends BaseController
     {
         $m = new IndexModel;
         $featuredProducts = $m->getFeaturedProduct();
-        print_r($featuredProducts);
-        return $this->callView('home');
+        // print_r($featuredProducts);
+        $view = 'home';
+        $data = ['featuredProducts' => $featuredProducts];
+        return $this->callView($view, $data);
     }
 }
