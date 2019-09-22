@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^trang-chu$ index.php
+
+RewriteRule ^([0-9a-zA-Z-_()]+)$ detail.php?url=$1
+# RewriteRule ^([0-9a-zA-Z-_()]+)/([0-9]+)$ detail.php?url=$1&id=$2
+# RewriteRule ^trang-chu.html$ index.php
+
