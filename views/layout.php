@@ -679,6 +679,19 @@
         spinner: "spinner4"
       });
     });
+
+    jQuery(document).ready(function() {
+      $('.add-to-cart-mt').click(function() {
+        let id = $(this).attr('data-id'); // $(this) 
+        $.ajax({
+          url: 'cart.php',
+          type: 'POST', // method
+          data: {
+            idProduct: id // $_POST['idProduct']
+          }
+        })
+      })
+    })
   </script>
 
 

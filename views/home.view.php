@@ -104,8 +104,7 @@
                                     <img class="hover-img" src="public/source/products-images/<?= $value->image ?>" alt="html template">
                                   </figure>
                                 </a>
-                                <button type="button" class="add-to-cart-mt">
-                                  <i class="fa fa-shopping-cart"></i>
+                                <button type="button" class="add-to-cart-mt" data-id="<?= $value->id ?>" <i class="fa fa-shopping-cart"></i>
                                   <span> Add to Cart</span>
                                 </button>
                               </div>
