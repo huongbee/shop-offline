@@ -1,6 +1,8 @@
 <?php
 require_once 'controllers/BaseController.php';
 require_once 'models/CartModel.php';
+require_once 'helpers/Cart.php';
+session_start();
 
 class CartController extends BaseController
 {
@@ -8,7 +10,13 @@ class CartController extends BaseController
     {
         $id = $_POST['idProduct'];
         $m = new CartModel();
-        $p = $m->getProduct($id);
-        print_r($p);
+        $product = $m->getProduct($id);
+        $qty = 1;
+        $oldCart = isset($_SESSION['cart']) ? $_SESSION['cart'] : null;
+        $cart = new Cart($oldCart);
+        $cart->add($product, $qty);
+        $_SESSION['cart'] = $cart;
+
+        print_r($_SESSION['cart']);
     }
 }
